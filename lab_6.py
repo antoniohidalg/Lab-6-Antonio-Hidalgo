@@ -6,6 +6,13 @@ def encode(password):
         encoded_password += new_digit
     return encoded_password
 
+#Added by Cam
+def decode(password):
+    decoded_password = ""
+    for digit in password:
+        new_digit = str((int(digit) - 3) % 10)
+        decoded_password += new_digit
+    return decoded_password
 
 def main():
     encoded_password = ""
